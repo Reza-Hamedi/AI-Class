@@ -43,9 +43,9 @@ class playlistManager():
 
 
 Manager = playlistManager(Playlist)
-# Manager.trackCounter()
-# Manager.lastFirstMusic()
-# Manager.appendDynamite()
-# Manager.removeBeliever()
-# Manager.playlistSorter()
+Manager.trackCounter()
+Manager.lastFirstMusic()
+Manager.appendDynamite()
+Manager.removeBeliever()
+Manager.playlistSorter()
 Manager.PrintPlaylist()
