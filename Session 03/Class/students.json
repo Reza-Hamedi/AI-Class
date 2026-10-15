@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Sara Ahmadi",
+        "student_id": "40312345",
+        "grades": {
+            "Math": 18,
+            "Physics": 9,
+            "Programming": 20,
+            "English": 15
+        }
+    },
+    {
+        "name": "Ali Rezaei",
+        "student_id": "40367890",
+        "grades": {
+            "Math": 13,
+            "Physics": 16,
+            "Programming": 11,
+            "English": 17
+        }
+    }
+]
