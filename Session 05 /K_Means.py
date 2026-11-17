@@ -42,14 +42,24 @@ for index ,cluster in enumerate(model.cluster_centers_):
     print(f"{index} Model Clusters: {cluster}")
 
 # Plot
-for i in model.labels_:
-    plt.scatter(i, color ='red')
+plt.scatter(
+    np.array(Data)[:, 0],
+    np.array(Data)[:, 1],
+    c=model.labels_,
+    cmap='viridis'
+)
 
-for j in model.cluster_centers_:
-    plt.scatter(j, color ='yellow')
+plt.scatter(
+    model.cluster_centers_[:, 0],
+    model.cluster_centers_[:, 1],
+    color='red',
+    marker='X',
+    s=200,
+    label='Cluster Centers'
+)
 
-
-plt.xlabel("labels")
-plt.ylabel("cluster")
-plt.title("Plot by Labels and Cluster")
+plt.xlabel("Feature 1")
+plt.ylabel("Feature 2")
+plt.title("K-Means Clustering")
+plt.legend()
 plt.show()
